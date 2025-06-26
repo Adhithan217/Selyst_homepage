@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ForProfessionals() {
   return (
@@ -19,8 +20,8 @@ export default function ForProfessionals() {
           </h2>
           <p className="mb-4 text-gray-600">
             Join Selyst and connect with customers actively looking for your
-            services. Whether you're a photographer, trainer, cleaner, or
-            consultant — we help grow your business with real leads.
+            services. Whether <p>You&apos;re a professional</p>, trainer,
+            cleaner, or consultant — we help grow your business with real leads.
           </p>
           <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
             <li>Access real-time leads in your area</li>
@@ -40,10 +41,12 @@ export default function ForProfessionals() {
           viewport={{ once: true }}
           className="flex-1 flex justify-center items-center"
         >
-          <img
-            src="/pexels-olly-3757371.jpg"
+          <Image
+            src="/pro-illustration.svg"
             alt="For Professionals"
-            className="w-full h-[60vh] object-contain"
+            width={500} // Required
+            height={500} // Required
+            className="w-full max-w-md mx-auto h-auto"
           />
         </motion.div>
       </div>

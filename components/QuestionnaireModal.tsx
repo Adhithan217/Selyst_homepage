@@ -85,7 +85,7 @@ export default function QuestionnaireModal({
           Let’s understand your needs
         </h2>
         <p className="text-gray-500 mb-4">
-          You're looking for <strong>{service}</strong> in{" "}
+          <p>You&apos;re</p> looking for <strong>{service}</strong> in{" "}
           <strong>{location}</strong>
         </p>
 
