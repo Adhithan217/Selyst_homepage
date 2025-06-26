@@ -41,13 +41,14 @@ export default function ForProfessionals() {
           viewport={{ once: true }}
           className="flex-1 flex justify-center items-center"
         >
-          <Image
-            src="/pro-illustration.svg"
-            alt="For Professionals"
-            width={500} // Required
-            height={500} // Required
-            className="w-full max-w-md mx-auto h-auto"
-          />
+          <div className="relative w-full max-w-md h-[60vh] mx-auto">
+            <Image
+              src="/pexels-olly-3757371.jpg"
+              alt="For Professionals"
+              fill
+              className="object-cover rounded-lg shadow-md"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
